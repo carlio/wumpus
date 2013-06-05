@@ -101,15 +101,15 @@ while life == 1:
     
     for i in range(1,niveau+1):
         x = random.randrange(1,21,1)
-        while laby[x][3]! = 0:
+        while laby[x][3] != 0:
             x = random.randrange(1,21,1) 
         laby[x][3] = random.choice([30,40])#puits = 30 et portail = chauve souris = 40           
     salle = random.randrange(1,21,1)
-    while laby[salle][3]! = 0:
+    while laby[salle][3] != 0:
         salle = random.randrange(1,21,1)
     laby[salle][3] = 50  
     numerowumpus = random.randrange(1,21,1)
-    while laby[numerowumpus][3]! = 0:
+    while laby[numerowumpus][3] != 0:
         numerowumpus = random.randrange(1,21,1)
     while vie == 1:
         salle,vie,life = avance(salle)
